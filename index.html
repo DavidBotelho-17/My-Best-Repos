@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Best Repos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="cabecalho">
+            <p class="dashboard"><i class="fa-solid fa-cube"></i>&nbsp; DashBoard ></p><p id="Repositorio_atual_cabecalho">Repositories</p>
+        </div>
+    </header>
+
+
+    <nav class="menuSide">
+        <div>
+            <br><span class="starLogo"><⭐></span><span><b >My Best Repos</b></span><br><br><br>
+        </div>
+        <div>
+            <div class="Searchs">
+                <p><i class="fa-solid fa-magnifying-glass"></i> Search Repositories</p>
+            </div>
+            <div class="Searchs">
+                <p><i class="fa-regular fa-star"></i> My favorites</p><span class="countOfFavorites"></span>
+            </div>
+            <div class="Searchs">
+                <p><i class="fa-solid fa-gear"></i> Profile</p>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="intro">
+            <h1 class="titulo">Search GitHub Repositories</h1>
+            <p class="descricao">Query millions of open-source projects, analyze health metrics, and bookmark your <br> favorites into your developer dashboard</p>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="enter your repository here">
+            <p>Language: </p><button>all</button><button>TypeScript</button><button>Python</button><button>Rust</button><button>Go</button>
+        </div>
+    </main>
 </body>
 </html>
