@@ -15,31 +15,49 @@
     </header>
 
 
-    <nav class="menuSide">
+    <aside class="menuSide">
         <div>
             <br><span class="starLogo"><⭐></span><span><b >My Best Repos</b></span><br><br><br>
         </div>
         <div>
             <div class="Searchs">
-                <p><i class="fa-solid fa-magnifying-glass"></i> Search Repositories</p>
+                <a href="index.html"><i class="fa-solid fa-magnifying-glass"></i> Search Repositories</a>
             </div>
             <div class="Searchs">
-                <p><i class="fa-regular fa-star"></i> My favorites</p><span class="countOfFavorites"></span>
+                <a href="favorites.html"><i class="fa-regular fa-star"></i> My favorites</a><span class="countOfFavorites"></span>
             </div>
             <div class="Searchs">
-                <p><i class="fa-solid fa-gear"></i> Profile</p>
+                <a href="profile.html"><i class="fa-solid fa-gear"></i> Profile</a>
             </div>
         </div>
-    </nav>
+    </aside>
 
     <main class="main">
         <div class="intro">
             <h1 class="titulo">Search GitHub Repositories</h1>
             <p class="descricao">Query millions of open-source projects, analyze health metrics, and bookmark your <br> favorites into your developer dashboard</p>
         </div>
-        <div class="input">
-            <input type="text" placeholder="enter your repository here">
-            <p>Language: </p><button>all</button><button>TypeScript</button><button>Python</button><button>Rust</button><button>Go</button>
+
+        <div class="pai">
+            <div class="input">
+                <div class="containerSearch">
+                    <i id="lupaDoSearch" class="fa-solid fa-magnifying-glass"></i>
+                    <input class="inputRepositories" type="text" placeholder="Enter your repository here">
+                </div>
+
+                <div class="filtros">
+                    <span class="Language">Language: </span>
+                    <button class="buttonsFilterLanguage">All</button>
+                    <button class="buttonsFilterLanguage">TypeScript</button>
+                    <button class="buttonsFilterLanguage">Python</button>
+                    <button class="buttonsFilterLanguage">Rust</button>
+                    <button class="buttonsFilterLanguage">Go</button>
+                    <div class="sortContainer">
+                        <i class="fa-solid fa-sort"></i><span class="sortRepo">Sort:</span>
+                        <span class="moststars">Most Stars</span>
+                    </div>
+                </div>
+                
         </div>
     </main>
 </body>
